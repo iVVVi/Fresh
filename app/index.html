@@ -1,15 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FreshOK</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-   
+
+    <header class="header">
+
+        <div class="header__info">
+            <div class="container">
+                <div class="header__wrapper">
+                    <ul class="header__contacts">
+                        <li class="header__address">
+                            <a class="header__link" href="#">Адрес и время доставки</a>
+                        </li>
+                        <li class="header__hotline">
+                            <a class="header__link" href="#">Горячая линия 24/7</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__about">
+                        <li class="header__item">
+                            <a class="header__link" href="#">Доставка</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">О нас</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Новости</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <nav class="header__nav">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="Логотип">
+                </a>
+
+                <div class="header__dropdown">
+                    <button class="header__dropdown-btn">Каталог продуктов</button>
+                    <div class="header__dropdown-content">
+                        <a class="header__option" href="#">Бакалея</a>
+                        <a class="header__option" href="#">Овощи и фрукты</a>
+                        <a class="header__option" href="#">Молочные продукты</a>
+                        <a class="header__option" href="#">Хлеб</a>
+                        <a class="header__option" href="#">Мясо</a>
+                        <a class="header__option" href="#">Колбаса</a>
+                        <a class="header__option" href="#">Рыба</a>
+                        <a class="header__option" href="#">Алкоголь</a>
+                        <a class="header__option" href="#">Напитки</a>
+                        <a class="header__option" href="#">Торты</a>
+                        <a class="header__option" href="#">Мясо</a>
+                        <a class="header__option" href="#">Чай, кофе</a>
+                    </div>
+                  </div>
+                
+                <form class="header__search" action="#">
+                <input class="header__input" type="text" placeholder="Найти в магазине ...">
+
+                <button class="header__button btn" type="submit">Поиск</button>
+                </form>
+
+                <ul class="header__user-nav">
+                    <li class="header__user-nav-item">
+                        <a class="header__user-nav-link" href="#"></a>
+                    </li>
+                    <li class="header__user-nav-item header__user-nav-item--heart">
+                        <a class="header__user-nav-link" href="#">
+                            <span class="header__user-nav-count">12</span>
+                        </a>
+                    </li>
+                    <li class="header__user-nav-item header__user-nav-item--cart">
+                        <a class="header__user-nav-link" href="#">
+                            <span class="header__user-nav-count">12</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="Логотип">
+                </a>
+
+                <div class="footer__info">
+                    <form class="footer__form" action="#">
+                    <label class="footer__label">
+                        <input class="footer__input" type="email" placeholder="email@email.com" required>
+                    </label>
+                    <button class="footer__btn btn" type="submit">Подписаться</button>
+                </form>
+
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">О нас</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Контакты</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Публичная оферта</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Оплата и доставка</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Вакансии</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Акции</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Отзывы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Новости</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <address class="footer__contacts">
+                        <a class="footer__phone" href="tel:+7907288365">Горячая линия +7 907 288 365</a>
+                        <a class="footer__address" href="#"></a>
+
+                        <ul class="footer__social">
+                            <li class="footer__social-list">
+                                <a class="footer__social-link" href="#">
+                                    <span class="footer__description sr-only">Ссылка на Facebook</span>
+                                </a>
+                            </li>
+                            <li class="footer__social-list">
+                                <a class="footer__social-link" href="#">
+                                    <span class="footer__description sr-only">Ссылка на YouTube</span>
+                                </a>
+                            </li>
+                            <li class="footer__social-list">
+                                <a class="footer__social-link" href="#">
+                                    <span class="footer__description sr-only">Ссылка на Telegram</span>
+                                </a>
+                            </li>
+                            <li class="footer__social-list">
+                                <a class="footer__social-link" href="#">
+                                    <span class="footer__description sr-only">Ссылка на Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+                <span class="footer__copy">© 2021 Фрешок</span>
+
+                <ul class="footer__pay">
+                    <li class="footer__pay-list">
+                        <span class="footer__pay-descr sr-only">Способ оплаты Visa</span>
+                    </li>
+                    <li class="footer__pay-list">
+                        <span class="footer__pay-descr sr-only">Способ оплаты MasterCard</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
