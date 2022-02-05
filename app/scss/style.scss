@@ -6,11 +6,6 @@
 
 .logo {
     margin-right: 27px;
-    transition: opacity 0.5s
-}
-
-.logo:hover {
-    opacity: 0.5;
 }
 
 .header {
@@ -18,6 +13,7 @@
     left: 0;
     right: 0;
     background-color: $accent;
+
     &__info {
         padding: 15px 0;
         left: 0;
@@ -33,16 +29,6 @@
         font-weight: 700;
         font-size: 13px;
         text-transform: uppercase;
-        // line-height: 1.3;
-        // letter-spacing: 0.03em;
-    }
-
-    &__link {
-        transition: opacity 0.5s;
-    }
-
-    &__link:hover {
-        opacity: 0.5;
     }
 
     &__contacts {
@@ -137,11 +123,12 @@
     &__dropdown-content {
         display: none;
         position: absolute;
-        background-color: $white;;
+        background-color: $white;
+        ;
         width: 100%;
         border-radius: 0 0 6px 6px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      }
+    }
 
     &__dropdown:hover .header__dropdown-content {
         display: block;
@@ -180,9 +167,6 @@
     &__input {
         max-width: 420px;
         width: 100%;
-        background-color: $white;
-        border-radius: 6px 0 0 6px;
-        line-height: 1.4;
         padding-left: 51px;
         color: $grey;
         background-image: url('../images/icons/search-icon.svg');
@@ -191,14 +175,8 @@
     }
 
     &__button {
-        height: 50px;
         max-width: 158px;
-        width: 100%;
-        color: $white;
         background-color: $grey;
-        text-transform: uppercase;
-        line-height: 1.4;
-        border-radius: 0 6px 6px 0;
         transition: background-color 0.3s;
     }
 
@@ -214,37 +192,32 @@
         margin-right: 30px;
     }
 
-    &__user-nav-item {
-        background-image: url('../images/icons/user-icon.svg');
-        width: 25px;
+    &__user-nav-link {
+        display: block;
+        width: 32px;
         height: 32px;
-        transition: 0.5s;
+        position: relative;
+        background-size: cover;
     }
 
-    &__user-nav-item--heart {
+    &__user-nav-link--user {
+        background-image: url('../images/icons/user-icon.svg');
+        width: 25px;
+    }
+
+    &__user-nav-link--heart {
         background-image: url('../images/icons/heart-icon.svg');
-        width: 32px;
         height: 29px;
     }
 
-    &__user-nav-item--cart {
+    &__user-nav-link--cart {
         background-image: url('../images/icons/cart-icon.svg');
-        width: 32px;
-        height: 31px;
-    }
-
-    &__user-nav-item:hover {
-        opacity: 0.5;
-    }
-
-    &__user-nav-link {
-        padding: 20px;
-        position: relative;
+        width: 33px;
     }
 
     &__user-nav-count {
         position: absolute;
-        top: 12px;
+        top: -6px;
         left: -7px;
         width: 18px;
         height: 18px;
@@ -261,8 +234,146 @@
 
 .footer {
     background-color: $grey;
+    color: $white;
+    @extend %opensans-400;
+
     &__top {
         padding: 30px 0;
+    }
+
+    &__logo {
+        display: block;
+        max-width: 200px;
+        margin-bottom: 31px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form {
+        max-width: 315px;
+        width: 100%;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 18px;
+        line-height: 1.4;
+    }
+
+    &__input {
+        color: #4F4F4F;
+        max-width: 185px;
+        padding-left: 12px;
+    }
+
+    &__button {
+        background-color: $accent;
+        max-width: 126px;
+        margin-left: -5px;
+        transition: background-color 0.3s;
+    }
+
+    &__button:hover {
+        background-color: #70a826;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        max-width: 150px;
+        width: 100%;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 75px;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 100%;
+    }
+
+    &__link {
+        margin-bottom: 18px;
+    }
+
+    &__contacts {
+        font-style: normal;
+    }
+
+    &__phone,
+    &__address {
+        display: block;
+        margin-bottom: 18px;
+    }
+
+    &__social {
+        display: flex;
+    }
+
+    &__social-list:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    &__social-link {
+        display: block;
+        width: 33px;
+        height: 32px;
+        background-size: cover;
+    }
+
+    &__social-link--facebook {
+        background-image: url('../images/icons/facebook.svg');
+    }
+
+    &__social-link--youtube {
+        background-image: url('../images/icons/youtube.svg');
+    }
+
+    &__social-link--telegram {
+        background-image: url('../images/icons/telegram.svg');
+    }
+
+    &__social-link--instagram {
+        background-image: url('../images/icons/instagram.svg');
+    }
+
+    &__underline {
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: $white;
+        opacity: 0.1;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 29px 0;
+    }
+
+    &__pay {
+        display: flex;
+    }
+
+    &__pay-list {
+        height: 29px;
+    }
+
+    &__pay-list--visa {
+        background-image: url('../images/icons/visa.svg');
+        width: 93px;
+        margin-right: 24px;
+    }
+
+    &__pay-list--mastercard {
+        background-image: url('../images/icons/mastercard.svg');
+        width: 49px;
     }
 }
 
