@@ -6,11 +6,10 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF;
-    color: $main;
+    background-color: $white;
+    color: $dark-900;
     font-size: 14px;
-    letter-spacing: 0.03em;
-    line-height: 1.3;
+    line-height: 1.4;
     @extend %opensans-600;
 }
 
@@ -18,10 +17,29 @@ body {
     flex-grow: 1;
 }
 
+.logo {
+    fill: $white;
+    width: 200px;
+    height: 60px;
+}
+
 .container {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.section {
+    padding: 72px 0;
+}
+
+.title {
+    font-size: 32px;
+    color: $dark-900;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    @extend %ruda-600;
 }
 
 .sr-only {
@@ -39,12 +57,25 @@ body {
 .button {
     height: 50px;
     width: 100%;
+    text-align: center;
     color: $white;
-    font-weight: 600;
-    text-transform: uppercase;
     line-height: 1.4;
     border-radius: 0 6px 6px 0;
     transition: background-color 0.3s;
+}
+
+.button:focus {
+    box-shadow: 0px 0px 0px 4px $green-200;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #4D810C;
+}
+
+.button:active {
+    color: rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .input {
@@ -59,6 +90,36 @@ body {
     transition: opacity 0.5s;
 }
 
+.link:focus {
+    box-shadow: 0px 0px 0px 3px #EFF6E7;
+    border-radius: 3px;
+}
+
+.link:active {
+    color: #E0EDCF;
+    box-shadow: none;
+}
+
 .link:hover {
+    opacity: 0.7;
+}
+
+.icon {
+    transition: background-color 0.5s;
+}
+
+.icon:focus {
+    box-shadow: 0px 0px 0px 3px #EFF6E7;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon:active {
     opacity: 0.5;
+    box-shadow: none;
+}
+
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
 }
