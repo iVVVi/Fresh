@@ -515,6 +515,51 @@
     &__photo {
         width: 100%;
         margin-bottom: 10px;
+        position: relative;
+        z-index: -1;
+    }
+
+    &__link {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__link::before {
+        content: '';
+        position: absolute;
+        height: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: background-color 0.5s;
+    }
+
+    &__link:hover::before {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &__search-btn { 
+        position: absolute;
+        top: 40%;
+        left: 43%;
+        padding: 14px;
+        background-color: $white;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        opacity: 0;  
+        transition: opacity 0.5s;
+    }
+
+    &__link:hover .products__search-btn {
+        opacity: 1;
+    }
+
+    &__search {
+        width: 20px;
+        height: 20px;
+        fill: $green-900;
     }
 
     &__info {
@@ -649,6 +694,25 @@
     border-bottom: 2px solid #E0EDCF;
     box-shadow: none;
 }
+
+// .banners {
+//     &__content {
+//         display: flex;
+//     }
+
+//     &__banner {
+//         max-width: 300px;
+//         height: 300px;
+//         width: 100%;
+//         background-position: right;
+//         background-size: cover;
+//         margin-right: 30px;
+//     }
+
+//     &__banner--fruits {
+//         max-width: 630px;
+//     }
+// }
 
 
 
