@@ -1,0 +1,157 @@
+.footer {
+    background-color: $dark-grey;
+    color: $white;
+    @extend %opensans-400;
+
+    &__top {
+        padding: 29px 0;
+    }
+
+    &__logo {
+        display: block;
+        max-width: 200px;
+        margin-bottom: 31px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form {
+        max-width: 315px;
+        width: 100%;
+        margin-right: 150px;
+        position: relative;
+    }
+
+    &__label {
+        display: inline-block;
+        margin-bottom: 18px;
+    }
+
+    &__input {
+        color: #4F4F4F;
+        max-width: 185px;
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    &__button {
+        position: absolute;
+        top: 30px;
+        left: 185px;
+        background-color: $green;
+        max-width: 126px;
+        text-transform: uppercase;
+        border-radius: 0 6px 6px 0;
+    
+        &:focus {
+            border-radius: 0 6px 6px 0;
+        }
+    }
+
+    &__menu {
+        column-count: 3;
+    }
+
+    &__item {
+        max-width: 150px;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-right: 75px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+
+    &__contacts {
+        font-style: normal;
+        max-width: 225px;
+        width: 100%;
+    }
+
+    &__contact {
+        display: block;
+        margin-bottom: 18px;
+    }
+
+    &__social {
+        display: flex;
+    }
+
+    &__social-list:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    &__social-link {
+        display: block;
+        background-size: cover;
+        width: 33px;
+        height: 32px;
+        transition: box-shadow 0.3s;
+
+        &:focus{
+            box-shadow: 0px 0px 0px 3px $green-200;
+            border-radius: 3px;
+        }
+    }
+
+    &__svg {
+        width: 33px;
+        height: 32px;
+        fill: $white;
+        transition: fill 0.3s, opacity 0.3s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:active {
+            fill: $green-200;
+        }
+    }
+
+    &__underline {
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: $white;
+        opacity: 0.1;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 28px 0;
+    }
+
+    &__copy {
+        text-transform: uppercase;
+    }
+
+    &__pay {
+        display: flex;
+    }
+
+    &__pay-list:first-child {
+        margin-right: 24px;
+    }
+
+    &__svg--visa {
+        max-width: 93px;
+        width: 100%;
+        height: 29px;
+    }
+    
+    &__svg--mastercard {
+        max-width: 49px;
+        width: 100%;
+        height: 29px;
+    }
+}

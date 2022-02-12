@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: $white;
-    color: $dark-900;
+    color: $title;
     font-size: 14px;
     line-height: 1.4;
     @extend %opensans-600;
@@ -15,12 +15,7 @@ body {
 
 .main {
     flex-grow: 1;
-}
-
-.logo {
-    fill: $white;
-    width: 200px;
-    height: 60px;
+    padding-top: 157px;
 }
 
 .container {
@@ -35,7 +30,7 @@ body {
 
 .title {
     font-size: 32px;
-    color: $dark-900;
+    color: $title;
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -55,32 +50,30 @@ body {
 }
 
 .button {
-    height: 50px;
+    padding: 12px;
     width: 100%;
     text-align: center;
     color: $white;
     line-height: 1.4;
-    border-radius: 0 6px 6px 0;
-    transition: background-color 0.3s;
-}
-
-.button:focus {
-    box-shadow: 0px 0px 0px 4px $green-200;
     border-radius: 6px;
-}
+    transition: background-color 0.3s;
 
-.button:hover {
-    background-color: #4D810C;
-}
+    &:focus {
+        box-shadow: 0px 0px 0px 4px $green-200;
+    }
 
-.button:active {
-    color: rgba(255, 255, 255, 0.5);
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover {
+        background-color: #4D810C;
+    }
+
+    &:active {
+        color: rgba(255, 255, 255, 0.5);
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
 
 .input {
     width: 100%;
-    height: 50px;
     background-color: $white;
     border-radius: 6px 0 0 6px;
     line-height: 1.4;
@@ -88,38 +81,23 @@ body {
 
 .link {
     transition: opacity 0.5s;
-}
 
-.link:focus {
-    box-shadow: 0px 0px 0px 3px #EFF6E7;
-    border-radius: 3px;
+    &:focus {
+        box-shadow: 0px 0px 0px 3px #EFF6E7;
+        border-radius: 3px;
+    }
+    
+    &:active {
+        color: #E0EDCF;
+        box-shadow: none;
+    }
+    
+    &:hover {
+        opacity: 0.7;
+    }
 }
-
-.link:active {
-    color: #E0EDCF;
+    
+.mixitup-control-active {
+    border-bottom: 2px solid #E0EDCF;
     box-shadow: none;
-}
-
-.link:hover {
-    opacity: 0.7;
-}
-
-.icon {
-    transition: background-color 0.5s;
-}
-
-.icon:focus {
-    box-shadow: 0px 0px 0px 3px #EFF6E7;
-    border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.icon:active {
-    opacity: 0.5;
-    box-shadow: none;
-}
-
-.icon:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 3px;
 }

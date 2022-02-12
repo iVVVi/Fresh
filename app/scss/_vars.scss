@@ -1,39 +1,54 @@
 $black: #000000;
-$dark-900: #121212;
-$dark-800: #31352B;
-$dark-500: #505050;
-$red-900: #CF3E3B;
-$orange-900: #FF7A00;
-$yellow-900: #FFB800;
-$green-900: #63A60E;
+$title: #121212;
+$dark-grey: #31352B;
+$subtitle: #505050;
+$red: #CF3E3B;
+$orange: #FF7A00;
+$yellow: #FFB800;
+$green: #63A60E;
 $green-200: #E0EDCF;
 $green-100: #EFF6E7;
 $silver-600: #C1C1C1;
 $silver-100: #F6F6F6;
 $white: #FFFFFF;
 
+%opensans-300 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
 %opensans-400 {
-    font-family: 'Open Sans-Regular', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
 %opensans-600 {
-    font-family: 'Open Sans-SemiBold', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
 %opensans-700 {
-    font-family: 'Open Sans-Bold', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
 
+%ruda-400 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+}
+
 %ruda-600 {
-    font-family: 'Ruda-SemiBold', sans-serif;
+    font-family: 'Ruda', sans-serif;
     font-weight: 600;
 }
 
+%ruda-700 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 700;
+}
+
 %ruda-900 {
-    font-family: 'Ruda-Black', sans-serif;
+    font-family: 'Ruda', sans-serif;
     font-weight: 900;
 }
 
