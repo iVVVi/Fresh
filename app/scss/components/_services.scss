@@ -1,6 +1,7 @@
 .services {
     background-color: $silver-100;
     padding: 50px 0 30px;
+    
     &__list {
         display: flex;
         justify-content: center;
@@ -9,6 +10,7 @@
     &__item {
         position: relative;
         max-width: 264px;
+        width: 100%;
         padding-left: 74px;
         
         &:not(:last-child) {

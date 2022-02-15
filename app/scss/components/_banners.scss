@@ -1,0 +1,61 @@
+.banners {
+    padding-bottom: 69px;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    &__banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 77px 32px;
+        max-width: 300px;
+        height: 300px;
+        width: 100%;
+        background-position: right;
+        background-size: cover;
+        border-radius: 6px;
+        color: $subtitle;
+        max-width: 300px;
+        text-transform: uppercase;
+        @extend %opensans-700;
+
+        &--fruits {
+            color: $white;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+            max-width: 630px;
+        }
+    
+        &--fruits .banners__title {
+            max-width: 350px;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+        }
+    
+        &--fruits .banners__link {
+            border-bottom: 2px solid $white;
+        }
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        margin-bottom: 18px;
+        letter-spacing: 0.1em;
+    }
+
+    &__title {
+        font-size: 30px;
+        margin-bottom: 10px;
+        max-width: 170px;
+        width: 100%;
+        @extend %ruda-600;
+    }
+
+    &__link {
+        align-self: start;
+        border-bottom: 2px solid $subtitle;
+        padding-bottom: 6px;
+    }
+}

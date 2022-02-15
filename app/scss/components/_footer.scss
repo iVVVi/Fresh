@@ -117,14 +117,6 @@
         }
     }
 
-    &__underline {
-        left: 0;
-        right: 0;
-        height: 1px;
-        background-color: $white;
-        opacity: 0.1;
-    }
-
     &__bottom {
         display: flex;
         justify-content: space-between;

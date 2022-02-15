@@ -4,11 +4,11 @@
     margin-bottom: 50px;
 }
 
-.filter:not(:last-child) {
+.filters-item:not(:last-child) {
     margin-right: 24px;
 }
 
-.filter-btn {
+.filters-btn {
     color: $subtitle;
     font-size: 15px;
     text-transform: uppercase;

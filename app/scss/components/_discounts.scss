@@ -1,0 +1,91 @@
+.discounts {
+    background-color: #F5F5F5;
+
+    &__inner {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    &__filters-item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
+
+    &__card {
+        flex-direction: row;
+        padding: 12px;
+        justify-content: start;
+        background-color: $white;
+    }
+
+    &__photo {
+        margin-bottom: 0;
+        max-width: 100px;
+        object-fit: cover;
+    }
+
+    &__info {
+        padding: 0 0 0 12px;
+        margin: 0;
+        height: auto;
+        max-width: 164px;
+    }
+
+    &__name {
+        margin-bottom: 0;
+    }
+
+    &__buy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+    }
+
+    &__price {
+        font-size: 20px;
+    }
+
+    &__price-discount {
+        font-size: 12px;
+    }
+
+    &__rating {
+        color: $subtitle;
+        justify-self: flex-end;
+        padding-right: 15px;
+        @extend %opensans-700;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            right: -17px;
+            background-image: url('../images/sprite.svg#star');
+            background-repeat: no-repeat;
+            filter: brightness(0) saturate(100%) invert(84%) sepia(34%) saturate(6667%) hue-rotate(2deg) brightness(105%) contrast(104%);
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    &__link::before {
+        display: none;
+    }
+
+    &__button {
+        background-color: $green;
+        max-width: 180px;
+        margin: 0 auto;
+        display: block;
+    }
+}

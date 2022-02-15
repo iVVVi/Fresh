@@ -1,5 +1,6 @@
 .products {
     text-align: center;
+    
     &__filter:not(:last-child) {
         margin-right: 24px;
     }
@@ -8,7 +9,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
-        margin-bottom: 45px;
+        margin-bottom: 40px;
     }
 
     &__button {

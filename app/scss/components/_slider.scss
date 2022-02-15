@@ -75,27 +75,4 @@
     }
 }
 
-.slick-disabled {
-    fill: $silver-600;
-    background-color: rgba(255, 255, 255, 0.8);
-    pointer-events: none;
-    box-shadow: none;
-}
 
-.slick-prev {
-    left: 60px;
-}
-
-.prev {
-    width: 19px;
-    height: 32px;
-}
-
-.slick-next {
-    right: 60px;
-}
-
-.next {
-    width: 19px;
-    height: 32px;
-}

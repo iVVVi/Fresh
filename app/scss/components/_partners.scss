@@ -1,0 +1,17 @@
+.partners {
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__img {
+        opacity: 0.5;
+        cursor: pointer;
+        transition: opacity 0.4s;
+        
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

@@ -38,6 +38,10 @@
         width: 22px;
         height: 22px;
 
+        &:active {
+            filter: brightness(0) saturate(100%) invert(98%) sepia(6%) saturate(848%) hue-rotate(27deg) brightness(98%) contrast(89%);
+        }
+
         &--address {
             background-image: url('../images/sprite.svg#delivery-icon');
             width: 32px;
@@ -103,28 +107,28 @@
             height: 4px;
             transition: transform 0.5s;
         }
-    }
 
-    &__dropdown-btn.active {
-        background-color: $green-200;
-        border-radius: 6px 6px 0 0;
-
-        &::after {
-            transform: rotateX(180deg);
+        &.active {
+            background-color: $green-200;
+            border-radius: 6px 6px 0 0;
+    
+            &::after {
+                transform: rotateX(180deg);
+            }
         }
     }
 
     &__options {
         display: none;
-    }
 
-    &__options.active {
-        display: block;
-        position: absolute;
-        background-color: $white;
-        width: 100%;
-        border-radius: 0 0 6px 6px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        &.active {
+            display: block;
+            position: absolute;
+            background-color: $white;
+            width: 100%;
+            border-radius: 0 0 6px 6px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
     }
 
     &__option:not(:last-child) {
