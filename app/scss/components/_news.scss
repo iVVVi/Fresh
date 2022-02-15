@@ -46,6 +46,10 @@
         border-radius: 6px;
         position: relative;
         @extend %opensans-600;
+
+        &:hover .news__text {
+            color: $green;
+        }
     }
 
     &__img {
@@ -80,5 +84,6 @@
     &__text {
         padding: 18px;
         font-size: 16px;
+        transition: color 0.4s;
     }
 }
